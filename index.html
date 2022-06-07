@@ -7,29 +7,88 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
-    <title>Kevin Gomes Personal</title>
+    <title>Kevin Gomes Personal Website</title>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- NAVIGATION -->
-        <div class="navigation">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-            </nav>
-        </div>
-        <!-- END NAVIGATION -->
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </div>
+    <!-- END NAVIGATION -->
 
+
+        <!-- HOME SECTION -->
         <section id="home">
-            <div class="intro">
-                <h2>Hi there!</h2>
-                <h4 class="name">I'm Kevin Gomes</p>
-                <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur magna ut blandit pulvinar. Donec facilisis elit
-                eu augue eleifend, ut dignissim magna facilisis.</p>
+            <div class="container">
+                <div class="left">
+                    <div class="intro ">
+                        <h4>Hi there!</h4>
+                        <h2 class="name">I'm <span>Kevin Gomes</span></h2>
+                        <p class="description">Nice to meet you. I'm currently a student attending Hunter College and
+                            I'm studying full stack development with CodePath - Schmidt Futures</p>         
+                    </div>
+                    <button class="btn" href="#">My Resume</a>
+                </div>
+
+                <div class="right">
+                    <img src="./images/person-icon.png" alt="empty-image" id="hero">
+                </div>
             </div>
         </section>
-    </div>
+        <!-- END HOME SECTION -->
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="container">
+                <div class="left">
+                    <div class="about-me">
+                        <h3>About</h3>
+                        <p class="summary">Originally, I had planned to pursue architecture as a full blown career. Fortunately, I took a software development course in high school
+                        and, with a positive outlook, I haven't looked back since. As a developer, my focus was more on the front end and I've flexed that muscle participating in hackathons
+                        and interning with Google where I assisted in the development of a job finder app for teens graduating high school. <br>Currently, as a returning student, I'm a part of
+                        CodePath's SITE program to learn more about the backend and acquire a well rounded, full stack developer kit.
+                        <br><br>
+                        When I'm not learning or coding, you can find me reading a good book or winding down and enjoying a nice game on Steam.</p>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="img-container">
+                        <img src="./images/coding-img.jpg" alt="empty-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT SECTION -->
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <!--<h3>Portfolio</h3>-->
+            <div class="gallery">
+                <div class="image">
+                    <a href="https://screeching-prickle-comfort.glitch.me/"><img src="./images/work-1.png" alt="" srcset=""></a>
+                </div>
+                <div class="image">
+                    <a href="https://screeching-prickle-comfort.glitch.me/"><img src="./images/work-1.png" alt="" srcset=""></a>
+                </div>
+                <div class="image">
+                    <a href="https://screeching-prickle-comfort.glitch.me/"><img src="./images/work-1.png" alt="" srcset=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- END PORTFOLIO SECTION -->
+        <footer>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/KevinGomes"><i class="fa-brands fa-github-square"></i></a>
+                <a href="mailto:kevin.gomes.site@codepath.org"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </footer>
 </body>
 </html>
